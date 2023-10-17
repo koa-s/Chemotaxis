@@ -5,7 +5,7 @@ void setup()
   size(500, 500);
   background(60, 150, 63);
   bob = new Kitty();
-  litter = new Kitty[400];
+  litter = new Kitty[250];
   for (int i = 0; i<litter.length; i++)
   {
     litter[i]= new Kitty();
