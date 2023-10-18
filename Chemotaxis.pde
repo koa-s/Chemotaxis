@@ -5,7 +5,7 @@ void setup()
   size(500, 500);
   background(60, 150, 63);
   bob = new Kitty();
-  litter = new Kitty[250];
+  litter = new Kitty[150];
   for (int i = 0; i<litter.length; i++)
   {
     litter[i]= new Kitty();
@@ -31,8 +31,8 @@ class Kitty {
   {
     myX = (int)(Math.random()*500);
     myY = (int)(Math.random()*500);
-    rgb1 = (int)(Math.random()*80+80);
-    rgb2 = (int)(Math.random()*60+60);
+    rgb1 = (int)(Math.random()*80+70);
+    rgb2 = (int)(Math.random()*60+50);
     rgb3 = (int)(Math.random()*2+5);
   }
   void walk()
@@ -70,18 +70,6 @@ class Kitty {
   }
   void show()
   {
-    /*if(rgb==1)
-     {
-     fill(255,0,0);
-     }
-     else if(rgb==2)
-     {
-     fill(0,255,0);
-     }
-     else
-     {
-     fill(0,0,255);
-     }*/
     fill(rgb1, rgb2, rgb3);
     ellipse(myX, myY, 20, 10);
     ellipse(myX-5, myY+5, 5, 10);
