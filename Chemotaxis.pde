@@ -31,9 +31,9 @@ class Kitty {
   {
     myX = (int)(Math.random()*500);
     myY = (int)(Math.random()*500);
-    rgb1 = (int)(Math.random()*80+70);
-    rgb2 = (int)(Math.random()*60+50);
-    rgb3 = (int)(Math.random()*2+5);
+    rgb1 = (int)(Math.random()*60+60);
+    rgb2 = (int)(Math.random()*40+40);
+    rgb3 = (int)(Math.random()*10+10);
   }
   void walk()
   {
